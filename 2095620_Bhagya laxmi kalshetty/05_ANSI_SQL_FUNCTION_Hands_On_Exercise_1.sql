@@ -1,0 +1,13 @@
+use heap;
+SELECT * FROM module_info;
+alter table module_info add module_infra_fees float;
+select * from module_info;
+select module_name,round(module_infra_fees,2) from module_info;
+insert into module_info values('ut','hell',3,round(16.4534,2));
+select module_name,upper(left(module_name,1)) from module_info;
+select module_id,upper(left(module_id,1)) from module_info;
+select * from associate_status;
+ select concat(module_name,module_id) as name from module_info;
+ select module_name,upper(module_name) from module_info;
+ select module_name,substring(module_name,1,3) from module_info;
+ select * from trainer_info;
